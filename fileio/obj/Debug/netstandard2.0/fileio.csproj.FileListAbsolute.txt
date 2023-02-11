@@ -1,0 +1,10 @@
+D:\visual studio repos\EnemyDispose\fileio\bin\Debug\netstandard2.0\fileio.deps.json
+D:\visual studio repos\EnemyDispose\fileio\bin\Debug\netstandard2.0\fileio.dll
+D:\visual studio repos\EnemyDispose\fileio\bin\Debug\netstandard2.0\fileio.pdb
+D:\visual studio repos\EnemyDispose\fileio\obj\Debug\netstandard2.0\fileio.csproj.AssemblyReference.cache
+D:\visual studio repos\EnemyDispose\fileio\obj\Debug\netstandard2.0\fileio.GeneratedMSBuildEditorConfig.editorconfig
+D:\visual studio repos\EnemyDispose\fileio\obj\Debug\netstandard2.0\fileio.AssemblyInfoInputs.cache
+D:\visual studio repos\EnemyDispose\fileio\obj\Debug\netstandard2.0\fileio.AssemblyInfo.cs
+D:\visual studio repos\EnemyDispose\fileio\obj\Debug\netstandard2.0\fileio.csproj.CoreCompileInputs.cache
+D:\visual studio repos\EnemyDispose\fileio\obj\Debug\netstandard2.0\fileio.dll
+D:\visual studio repos\EnemyDispose\fileio\obj\Debug\netstandard2.0\fileio.pdb

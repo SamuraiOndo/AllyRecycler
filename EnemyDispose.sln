@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnemyDispose", "EnemyDispose\EnemyDispose.csproj", "{BB330DFD-9C51-4441-84AF-C176994101C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fileio", "fileio\fileio.csproj", "{12D03BA7-B3CB-4D1A-82E1-25610AD25C86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA16A088-E68B-4DEB-9389-D3F10408EC86}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Downloads\rat.ico = ..\..\Downloads\rat.ico
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB330DFD-9C51-4441-84AF-C176994101C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB330DFD-9C51-4441-84AF-C176994101C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB330DFD-9C51-4441-84AF-C176994101C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB330DFD-9C51-4441-84AF-C176994101C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D03BA7-B3CB-4D1A-82E1-25610AD25C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D03BA7-B3CB-4D1A-82E1-25610AD25C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D03BA7-B3CB-4D1A-82E1-25610AD25C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D03BA7-B3CB-4D1A-82E1-25610AD25C86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3031F4C2-CCF7-40FC-BC82-3AEAF377ADFF}
+	EndGlobalSection
+EndGlobal
