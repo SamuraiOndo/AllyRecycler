@@ -30,7 +30,11 @@ namespace EnemyDispose
                     listBox1.Items.Add(file.enemyDisposeNodes[i].name);
                 }
                 listBox1.Show();
+                flags1TextBox.Value = file.headerData.flags1;
+                flags2TextBox.Value = file.headerData.flags2;
+                flags3TextBox.Value = file.headerData.flags3;
             }
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -315,6 +319,41 @@ namespace EnemyDispose
             {
                 file.enemyDisposeNodes[listBox1.SelectedIndex].weapon = file.weaponArray[weaponTextBox.SelectedIndex];
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            for (int i = 0; i < file.headerData.count; i++)
+            {
+                listBox1.Items.Add(file.enemyDisposeNodes[i].name);
+            }
+            listBox1.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flags1TextBox_ValueChanged(object sender, EventArgs e)
+        {
+            file.headerData.flags1 = Convert.ToUInt32(flags1TextBox.Value);
+        }
+
+        private void flags2TextBox_ValueChanged(object sender, EventArgs e)
+        {
+            file.headerData.flags2 = Convert.ToUInt32(flags2TextBox.Value);
+        }
+
+        private void flags3TextBox_ValueChanged(object sender, EventArgs e)
+        {
+            file.headerData.flags3 = Convert.ToUInt32(flags3TextBox.Value);
         }
     }
 }

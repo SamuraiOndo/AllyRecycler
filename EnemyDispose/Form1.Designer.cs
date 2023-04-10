@@ -80,6 +80,13 @@
             this.unk7TextBox = new System.Windows.Forms.NumericUpDown();
             this.copyButton = new System.Windows.Forms.Button();
             this.weaponTextBox = new System.Windows.Forms.ComboBox();
+            this.refreshButton = new System.Windows.Forms.Button();
+            this.flags1Label = new System.Windows.Forms.Label();
+            this.flags2Label = new System.Windows.Forms.Label();
+            this.flags3Label = new System.Windows.Forms.Label();
+            this.flags1TextBox = new System.Windows.Forms.NumericUpDown();
+            this.flags2TextBox = new System.Windows.Forms.NumericUpDown();
+            this.flags3TextBox = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.heightTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.damageTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voiceTextBox)).BeginInit();
@@ -92,6 +99,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.unk5TextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk6TextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk7TextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flags1TextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flags2TextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flags3TextBox)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -565,7 +575,7 @@
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(65, 23);
             this.addButton.TabIndex = 49;
-            this.addButton.Text = "+ Add";
+            this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -575,7 +585,7 @@
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(59, 23);
             this.deleteButton.TabIndex = 50;
-            this.deleteButton.Text = "- Delete";
+            this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -726,11 +736,11 @@
             // 
             // copyButton
             // 
-            this.copyButton.Location = new System.Drawing.Point(12, 39);
+            this.copyButton.Location = new System.Drawing.Point(67, 39);
             this.copyButton.Name = "copyButton";
-            this.copyButton.Size = new System.Drawing.Size(120, 23);
+            this.copyButton.Size = new System.Drawing.Size(65, 23);
             this.copyButton.TabIndex = 64;
-            this.copyButton.Text = "- Copy";
+            this.copyButton.Text = "Copy";
             this.copyButton.UseVisualStyleBackColor = true;
             this.copyButton.Click += new System.EventHandler(this.copyButton_Click);
             // 
@@ -2283,11 +2293,95 @@
             this.weaponTextBox.TabIndex = 65;
             this.weaponTextBox.SelectedIndexChanged += new System.EventHandler(this.weaponTextBox_SelectedIndexChanged);
             // 
+            // refreshButton
+            // 
+            this.refreshButton.Location = new System.Drawing.Point(12, 39);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(59, 23);
+            this.refreshButton.TabIndex = 66;
+            this.refreshButton.Text = "Refresh";
+            this.refreshButton.UseVisualStyleBackColor = true;
+            this.refreshButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // flags1Label
+            // 
+            this.flags1Label.AutoSize = true;
+            this.flags1Label.Location = new System.Drawing.Point(138, 21);
+            this.flags1Label.Name = "flags1Label";
+            this.flags1Label.Size = new System.Drawing.Size(51, 15);
+            this.flags1Label.TabIndex = 67;
+            this.flags1Label.Text = "Flags (1)";
+            this.flags1Label.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // flags2Label
+            // 
+            this.flags2Label.AutoSize = true;
+            this.flags2Label.Location = new System.Drawing.Point(357, 21);
+            this.flags2Label.Name = "flags2Label";
+            this.flags2Label.Size = new System.Drawing.Size(51, 15);
+            this.flags2Label.TabIndex = 69;
+            this.flags2Label.Text = "Flags (2)";
+            // 
+            // flags3Label
+            // 
+            this.flags3Label.AutoSize = true;
+            this.flags3Label.Location = new System.Drawing.Point(582, 22);
+            this.flags3Label.Name = "flags3Label";
+            this.flags3Label.Size = new System.Drawing.Size(51, 15);
+            this.flags3Label.TabIndex = 71;
+            this.flags3Label.Text = "Flags (3)";
+            // 
+            // flags1TextBox
+            // 
+            this.flags1TextBox.Location = new System.Drawing.Point(138, 41);
+            this.flags1TextBox.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.flags1TextBox.Name = "flags1TextBox";
+            this.flags1TextBox.Size = new System.Drawing.Size(213, 23);
+            this.flags1TextBox.TabIndex = 73;
+            this.flags1TextBox.ValueChanged += new System.EventHandler(this.flags1TextBox_ValueChanged);
+            // 
+            // flags2TextBox
+            // 
+            this.flags2TextBox.Location = new System.Drawing.Point(357, 41);
+            this.flags2TextBox.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.flags2TextBox.Name = "flags2TextBox";
+            this.flags2TextBox.Size = new System.Drawing.Size(219, 23);
+            this.flags2TextBox.TabIndex = 73;
+            this.flags2TextBox.ValueChanged += new System.EventHandler(this.flags2TextBox_ValueChanged);
+            // 
+            // flags3TextBox
+            // 
+            this.flags3TextBox.Location = new System.Drawing.Point(582, 41);
+            this.flags3TextBox.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.flags3TextBox.Name = "flags3TextBox";
+            this.flags3TextBox.Size = new System.Drawing.Size(206, 23);
+            this.flags3TextBox.TabIndex = 73;
+            this.flags3TextBox.ValueChanged += new System.EventHandler(this.flags3TextBox_ValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flags3TextBox);
+            this.Controls.Add(this.flags2TextBox);
+            this.Controls.Add(this.flags1TextBox);
+            this.Controls.Add(this.flags3Label);
+            this.Controls.Add(this.flags2Label);
+            this.Controls.Add(this.flags1Label);
+            this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.weaponTextBox);
             this.Controls.Add(this.copyButton);
             this.Controls.Add(this.unk7TextBox);
@@ -2353,6 +2447,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.unk5TextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk6TextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk7TextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flags1TextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flags2TextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flags3TextBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2377,7 +2474,7 @@
         private TrackBar heightTrackBar;
         private TrackBar trackBar2;
         private Label label7;
-        private Label label8;
+        private Label flags2Label;
         private TrackBar damageTrackBar;
         private Label label9;
         private Label label10;
@@ -2413,5 +2510,11 @@
         private NumericUpDown unk7TextBox;
         private Button copyButton;
         private ComboBox weaponTextBox;
+        private Button refreshButton;
+        private Label flags1Label;
+        private Label flags3Label;
+        private NumericUpDown flags1TextBox;
+        private NumericUpDown flags2TextBox;
+        private NumericUpDown flags3TextBox;
     }
 }
