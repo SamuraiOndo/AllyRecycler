@@ -84,8 +84,8 @@ namespace EnemyDispose
                 unk3TextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].unk3.ToString();
                 unk5TextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].unk5.ToString();
                 unk4TextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].unk4.ToString();
-                unk7TextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].unk6.ToString();
-                unk6TextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].unk7.ToString();
+                unk7TextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].unk7.ToString();
+                unk6TextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].unk6.ToString();
                 heightTrackBar.Value = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].height;
                 damageTrackBar.Value = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].damage;
             }
