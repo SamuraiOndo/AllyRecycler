@@ -1,0 +1,11 @@
+C:\Users\Violet\source\repos\AllyRecycler\fileio\bin\Release\netstandard2.0\fileio.deps.json
+C:\Users\Violet\source\repos\AllyRecycler\fileio\bin\Release\netstandard2.0\fileio.dll
+C:\Users\Violet\source\repos\AllyRecycler\fileio\bin\Release\netstandard2.0\fileio.pdb
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.csproj.AssemblyReference.cache
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.AssemblyInfoInputs.cache
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.AssemblyInfo.cs
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.csproj.CoreCompileInputs.cache
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.sourcelink.json
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.dll
+C:\Users\Violet\source\repos\AllyRecycler\fileio\obj\Release\netstandard2.0\fileio.pdb

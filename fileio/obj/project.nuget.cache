@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k0AuR+0AmFwdXltb8LcJu350pzYwkPAgFF415k27qclygScTrmhC44CoXdkEeupUJ+eA2GCfa/P94crih8ZS6w==",
+  "dgSpecHash": "e7KflPqao38=",
   "success": true,
-  "projectFilePath": "D:\\visual studio repos\\EnemyDispose\\fileio\\fileio.csproj",
+  "projectFilePath": "C:\\Users\\Violet\\Source\\Repos\\AllyRecycler\\fileio\\fileio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Violet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Violet\\.nuget\\packages\\microsoft.io.recyclablememorystream\\1.3.6\\microsoft.io.recyclablememorystream.1.3.6.nupkg.sha512",

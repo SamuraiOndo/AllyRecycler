@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\visual studio repos\\EnemyDispose\\fileio\\fileio.csproj": {}
+    "C:\\Users\\Violet\\Source\\Repos\\AllyRecycler\\fileio\\fileio.csproj": {}
   },
   "projects": {
-    "D:\\visual studio repos\\EnemyDispose\\fileio\\fileio.csproj": {
+    "C:\\Users\\Violet\\Source\\Repos\\AllyRecycler\\fileio\\fileio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visual studio repos\\EnemyDispose\\fileio\\fileio.csproj",
+        "projectUniqueName": "C:\\Users\\Violet\\Source\\Repos\\AllyRecycler\\fileio\\fileio.csproj",
         "projectName": "fileio",
-        "projectPath": "D:\\visual studio repos\\EnemyDispose\\fileio\\fileio.csproj",
+        "projectPath": "C:\\Users\\Violet\\Source\\Repos\\AllyRecycler\\fileio\\fileio.csproj",
         "packagesPath": "C:\\Users\\Violet\\.nuget\\packages\\",
-        "outputPath": "D:\\visual studio repos\\EnemyDispose\\fileio\\obj\\",
+        "outputPath": "C:\\Users\\Violet\\source\\repos\\AllyRecycler\\fileio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Violet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -62,7 +68,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

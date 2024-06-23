@@ -8,7 +8,7 @@ using System.Text;
 
 namespace EnemyDispose
 {
-    public partial class Form1 : Form 
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -38,7 +38,7 @@ namespace EnemyDispose
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
@@ -53,7 +53,7 @@ namespace EnemyDispose
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -62,18 +62,20 @@ namespace EnemyDispose
             {
                 nameTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].name;
                 modelNameTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].modelName;
-                if (!file.enemyDisposeNodes[listBox1.SelectedIndex].weapon.Equals("")) {
-                    var index = Array.FindIndex(file.weaponArray, row => row.Contains(file.enemyDisposeNodes[listBox1.SelectedIndex].weapon));
-                    weaponTextBox.SelectedIndex = index;
+                weaponTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].weapon;
+                btlStartTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].btl_st;
+                voiceTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].voiceBank.ToString();
+                if (!file.headerData.isYakuza4)
+                {
+                    AIComboBox.SelectedIndex = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].aiPreset;
+                    aiComboBoxY4.Hide();
                 }
                 else
                 {
-                    weaponTextBox.SelectedIndex = file.weaponArray.Length;
+                    aiComboBoxY4.SelectedIndex = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].aiPreset;
+                    AIComboBox.Hide();
                 }
-                btlStartTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].btl_st;
-                voiceTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].voiceBank.ToString();
-                AIComboBox.SelectedIndex = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].aiPreset;
-                NPCTypeComboBox.SelectedIndex = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].type-1;
+                NPCTypeComboBox.SelectedIndex = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].type - 1;
                 xTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].X.ToString();
                 zTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].Z.ToString();
                 yTextBox.Text = file.enemyDisposeNodes[listBox1.SelectedIndex].Y.ToString();
@@ -89,7 +91,7 @@ namespace EnemyDispose
                 heightTrackBar.Value = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].height;
                 damageTrackBar.Value = (int)file.enemyDisposeNodes[listBox1.SelectedIndex].damage;
             }
-            
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -226,7 +228,7 @@ namespace EnemyDispose
 
         private void NPCTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            file.enemyDisposeNodes[listBox1.SelectedIndex].type = Convert.ToByte(NPCTypeComboBox.SelectedIndex+1);
+            file.enemyDisposeNodes[listBox1.SelectedIndex].type = Convert.ToByte(NPCTypeComboBox.SelectedIndex + 1);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -237,7 +239,7 @@ namespace EnemyDispose
             {
                 file.saveFile((string)filePath);
             }
-            
+
         }
 
         private void rotYTextBox_ValueChanged(object sender, EventArgs e)
@@ -287,7 +289,8 @@ namespace EnemyDispose
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedIndex != -1) {
+            if (listBox1.SelectedIndex != -1)
+            {
                 file.enemyDisposeNodes.RemoveAt(listBox1.SelectedIndex);
                 listBox1.Items.Clear();
                 file.headerData.count -= 1;
@@ -315,10 +318,6 @@ namespace EnemyDispose
 
         private void weaponTextBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (weaponTextBox.SelectedIndex != file.weaponArray.Length)
-            {
-                file.enemyDisposeNodes[listBox1.SelectedIndex].weapon = file.weaponArray[weaponTextBox.SelectedIndex];
-            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -354,6 +353,17 @@ namespace EnemyDispose
         private void flags3TextBox_ValueChanged(object sender, EventArgs e)
         {
             file.headerData.flags3 = Convert.ToUInt32(flags3TextBox.Value);
+        }
+
+        private void weaponTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            file.enemyDisposeNodes[listBox1.SelectedIndex].weapon = weaponTextBox.Text;
+        }
+
+        private void aiComboBoxY4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            file.enemyDisposeNodes[listBox1.SelectedIndex].aiPreset = Convert.ToByte(aiComboBoxY4.SelectedIndex);
+
         }
     }
 }

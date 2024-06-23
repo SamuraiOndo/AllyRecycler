@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fileio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edfbb523971081a7ec6572bb2c85f1f8a455f7c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("fileio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fileio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

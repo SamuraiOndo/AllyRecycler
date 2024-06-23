@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "onNmpA0GI7HROFfpnACOdDP6pu1ZE/ijd6GZLsq7d9c05I/vvJvYGXJlMyIxyEZfJEcBNgtpMbJBz2/ykFrYPw==",
+  "dgSpecHash": "/7bE9naICsM=",
   "success": true,
-  "projectFilePath": "D:\\visual studio repos\\EnemyDispose\\EnemyDispose\\EnemyDispose.csproj",
+  "projectFilePath": "C:\\Users\\Violet\\Source\\Repos\\AllyRecycler\\EnemyDispose\\EnemyDispose.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Violet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Violet\\.nuget\\packages\\microsoft.io.recyclablememorystream\\1.3.6\\microsoft.io.recyclablememorystream.1.3.6.nupkg.sha512",
